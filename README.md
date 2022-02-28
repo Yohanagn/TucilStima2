@@ -1,7 +1,7 @@
 # TucilStima2
 
 ## Deskripsi Singkat
-Program ini dibuat dengan memanfaatkan algoritma divide and conquer untuk menghasilkan convex hull.
+Program ini dibuat dengan memanfaatkan algoritma divide and conquer untuk menghasilkan convex hull yang akan digunakan untuk visualisasi Tes Linear Separability Dataset.
 
 ## Requirement Program
 Untuk menjalankan program, anda perlu melakukan instalasi beberapa module/package dengan menggunakan perintah di bawah ini:
@@ -16,3 +16,6 @@ Untuk menjalankan program, anda perlu melakukan instalasi beberapa module/packag
 ## Author
 Program dibuat oleh:
 Yohana Golkaria Nainggolan (13520053)
+
+### Catatan
+Program hanya menguji satu jenis dataset, yaitu dataset iris
