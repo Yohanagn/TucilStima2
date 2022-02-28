@@ -10,16 +10,6 @@ def quickhull(array, p1, p2, point): ##fungsi untuk menentukan apakah sebuah tit
     y3 = array[point][1]
     return x1*y2 + x3*y1 + x2*y3 - x3*y2 - x2*y1 - x1*y3
 
-def besar_sudut(A, B, C):
-    sudut_ba = A - B
-    sudut_bc = C - B
-    cos_theta = np.dot(sudut_ba, sudut_bc)/(np.linalg.norm(sudut_ba)*np.linalg.norm(sudut_bc))
-
-    cos_theta = np.clip(cos_theta, -1, 1)
-    
-    return np.degrees(np.arccos(cos_theta))
-
-
 def finding_maxmin(array):
     x = []
     for i in range(len(array)):
@@ -42,6 +32,16 @@ def finding_maxmin(array):
         else: idxMax += 1
     
     return (idxMin, idxMax)
+    
+def besar_sudut(A, B, C):
+    sudut_ba = A - B
+    sudut_bc = C - B
+    cos_theta = np.dot(sudut_ba, sudut_bc)/(np.linalg.norm(sudut_ba)*np.linalg.norm(sudut_bc))
+
+    cos_theta = np.clip(cos_theta, -1, 1)
+    
+    return np.degrees(np.arccos(cos_theta))
+
 
 def convexhull(vertices):
     arr = np.array(vertices).astype(float)
